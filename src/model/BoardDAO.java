@@ -18,6 +18,7 @@ public class BoardDAO {
 	public BoardDAO() {
 		try {
 			/// 주석 단다 또 달아 또 달아 또
+			// 한번 더 달아볼까?? 3번째로..!!
 			Context context = new InitialContext();
 			DataSource ds = (DataSource)context.lookup("java:comp/env/oracleDB");
 			con = ds.getConnection();
@@ -96,9 +97,7 @@ public class BoardDAO {
 				vo.setUpfile(rs.getString("UPFILE"));
 				
 				arr.add(vo);
-			}
-			
-			
+			}		
 		} catch(Exception e) {
 			e.printStackTrace();
 		}

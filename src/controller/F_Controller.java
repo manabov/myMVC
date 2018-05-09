@@ -21,41 +21,41 @@ import model.ActionData;
 
 public class F_Controller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
 
+	//안녕하세요 지아에요
     public F_Controller() {
         super();
         // TODO Auto-generated constructor stub
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+
 		request.setCharacterEncoding("utf-8");
 		String service = request.getRequestURI().substring((request.getContextPath()+"/board/").length());
-		
+
 		System.out.println(service);
-		
+
 		try {
 			Action action = (Action)Class.forName("board."+service).newInstance();
 			ActionData data = action.execute(request, response);
-			
+
 			if(data != null) {
-				
+
 				if(data.isRedirect()) {
 					response.sendRedirect(data.getPath());
 				} else {
 					request.getRequestDispatcher("../view/template.jsp").forward(request, response);
 				}
 			}
-			
-			
+
+
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
-		
+
+
+
 	}
 
 	/**

@@ -2,7 +2,7 @@
     <wb-module deploy-name="Review">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="Review"/>
         <property name="java-output-path" value="/Review/build/classes"/>
+        <property name="context-root" value="myMVC"/>
     </wb-module>
 </project-modules>

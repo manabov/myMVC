@@ -17,7 +17,7 @@ public class BoardDAO {
 	
 	public BoardDAO() {
 		try {
-			/// 주석 단다
+			/// 주석 단다 또 달아 또 달아 또
 			Context context = new InitialContext();
 			DataSource ds = (DataSource)context.lookup("java:comp/env/oracleDB");
 			con = ds.getConnection();

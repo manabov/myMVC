@@ -4,6 +4,10 @@
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <property name="java-output-path" value="/Review/build/classes"/>
+<<<<<<< HEAD
         <property name="context-root" value="Review2"/>
+=======
+        <property name="context-root" value="myMVC"/>
+>>>>>>> branch 'master' of https://github.com/manabov/myMVC.git
     </wb-module>
 </project-modules>
